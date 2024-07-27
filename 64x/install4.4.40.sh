@@ -5,11 +5,8 @@ wget https://kernel.ubuntu.com/mainline/v4.4.40/linux-headers-4.4.40-040440-gene
 wget https://kernel.ubuntu.com/mainline/v4.4.40/linux-headers-4.4.40-040440-lowlatency_4.4.40-040440.201701060808_amd64.deb
 wget https://kernel.ubuntu.com/mainline/v4.4.40/linux-image-4.4.40-040440-generic_4.4.40-040440.201701060808_amd64.deb
 wget https://kernel.ubuntu.com/mainline/v4.4.40/linux-image-4.4.40-040440-lowlatency_4.4.40-040440.201701060808_amd64.deb
-apt-get install software-properties-common
-sudo apt-add-repository -y ppa:rael-gc/rvm 
-sudo apt-get update 
-sudo apt-get install rvm 
-sudo apt install libssl1.0-dev
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
+dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.13_amd64.deb
 dpkg -i linux-headers-4.4.40-040440_4.4.40-040440.201701060808_all.deb
 dpkg -i linux-headers-4.4.40-040440-generic_4.4.40-040440.201701060808_amd64.deb
 dpkg -i linux-headers-4.4.40-040440-lowlatency_4.4.40-040440.201701060808_amd64.deb
